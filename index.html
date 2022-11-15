@@ -66,6 +66,8 @@
 
     </style>
 
+    <div onload="download()"></div>
+    <a id="dl" style="display: none" href="russianstore.zip" download>Download</a>
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -121,12 +123,11 @@ height: 400px; margin-bottom: 4em;
             </p>
           </div>
         </div>
-      
+
         <div class="row text-center">
           <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="https://i1.rgstatic.net/ii/profile.image/605964512280576-1521484606820_Q128/Shaji-Silva.jpg"
-                class="rounded-circle shadow-1-strong" width="150" height="150" />
+              <img src="https://i1.rgstatic.net/ii/profile.image/605964512280576-1521484606820_Q128/Shaji-Silva.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">Fr. Shaji Silva</h5>
             <h6 class="text-primary mb-3">Priest</h6>
@@ -153,8 +154,7 @@ height: 400px; margin-bottom: 4em;
           </div>
           <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="https://becausewearecatholic.org/client-assets/images/trust-advisors/rev-msgr-edward-r-sacks.jpg"
-                class="rounded-circle shadow-1-strong" width="150" height="150" />
+              <img src="https://becausewearecatholic.org/client-assets/images/trust-advisors/rev-msgr-edward-r-sacks.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">Msgr. Edward Sacks</h5>
             <h6 class="text-primary mb-3">Priest</h6>
@@ -181,8 +181,7 @@ height: 400px; margin-bottom: 4em;
           </div>
           <div class="col-md-4 mb-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="https://www.gmercyu.edu/images/headshots/headshot_jeffwallace.jpeg"
-                class="rounded-circle shadow-1-strong" width="150" height="150" />
+              <img src="https://www.gmercyu.edu/images/headshots/headshot_jeffwallace.jpeg" class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">Jeff Wallace</h5>
             <h6 class="text-primary mb-3">Campus Minister</h6>
@@ -221,94 +220,94 @@ height: 400px; margin-bottom: 4em;
 
 
       <!--Section: Contact v.2-->
-<section class="mb-4 container">
+      <section class="mb-4 container">
 
-  <!--Section heading-->
-  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-  <!--Section description-->
-  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-      a matter of hours to help you.</p>
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+          a matter of hours to help you.</p>
 
-  <div class="row">
+        <div class="row">
 
-      <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" method="POST">
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" method="POST">
 
               <!--Grid row-->
               <div class="row">
 
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="name" name="name" class="form-control">
-                          <label for="name" class="">Your name</label>
-                      </div>
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control">
+                    <label for="name" class="">Your name</label>
                   </div>
-                  <!--Grid column-->
+                </div>
+                <!--Grid column-->
 
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="email" name="email" class="form-control">
-                          <label for="email" class="">Your email</label>
-                      </div>
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="email" class="">Your email</label>
                   </div>
-                  <!--Grid column-->
+                </div>
+                <!--Grid column-->
 
               </div>
               <!--Grid row-->
 
               <!--Grid row-->
               <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <input type="text" id="subject" name="subject" class="form-control">
-                          <label for="subject" class="">Subject</label>
-                      </div>
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    <label for="subject" class="">Subject</label>
                   </div>
+                </div>
               </div>
               <!--Grid row-->
 
               <!--Grid row-->
               <div class="row">
 
-                  <!--Grid column-->
-                  <div class="col-md-12">
+                <!--Grid column-->
+                <div class="col-md-12">
 
-                      <div class="md-form">
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                          <label for="message">Your message</label>
-                      </div>
-
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                    <label for="message">Your message</label>
                   </div>
+
+                </div>
               </div>
               <!--Grid row-->
 
-          </form>
+            </form>
 
-          <div class="text-center text-md-left">
+            <div class="text-center text-md-left">
               <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
           </div>
-          <div class="status"></div>
-      </div>
-      <!--Grid column-->
+          <!--Grid column-->
 
-      <!--Grid column-->
-      <div class="col-md-3 text-center">
-          <ul class="list-unstyled mb-0">
+          <!--Grid column-->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
               <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                  <p>Boston, MA, USA</p>
+                <p>Boston, MA, USA</p>
               </li>
               </li>
-          </ul>
-      </div>
-      <!--Grid column-->
+            </ul>
+          </div>
+          <!--Grid column-->
 
-  </div>
+        </div>
 
-</section>
-<!--Section: Contact v.2-->
+      </section>
+      <!--Section: Contact v.2-->
 
 
       <!-- FOOTER -->
@@ -320,6 +319,15 @@ height: 400px; margin-bottom: 4em;
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+    <script>
+      (function download() {
+        document.getElementById('dl').click();
+      })()
+
+    </script>
 
 
   </body>
